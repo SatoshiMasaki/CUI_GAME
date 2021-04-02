@@ -9,7 +9,7 @@ import re
 def pack_page(url):
     try:
         headers = {
-            "User-Agent": "######",
+            "User-Agent": "######",  #  環境ごとに設定
                     }
         pack_page = requests.get(url=url, headers=headers)
         bsobj_ = BeautifulSoup(pack_page.text, "html.parser")
